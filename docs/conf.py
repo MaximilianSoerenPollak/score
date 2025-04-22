@@ -65,6 +65,10 @@ numfig = True
 
 # -- sphinx-needs configuration --------------------------------------------
 # Setting the needs layouts
+needs_build_json = True
+needs_reproducible_json = True
+needs_json_remove_defaults = True
+
 needs_template_folder = "_templates"
 needs_global_options = {"collapse": True}
 html_static_path = ["_tooling/assets", "_assets"]

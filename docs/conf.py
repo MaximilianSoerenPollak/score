@@ -30,7 +30,7 @@ sys.path.insert(0, ".")
 
 project = "S-CORE"
 author = "S-CORE"
-release = "0.1"
+version = "0.1"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

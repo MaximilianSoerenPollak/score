@@ -1,5 +1,5 @@
-# Workflow for manually deploying static content to GitHub Pages
-name: Manual Deploy to Pages
+# Workflow for manually deploying an entire folder to GitHub Pages
+name: Manual Deploy Folder to Pages
 
 on:
   # Only allow manual execution from the Actions tab
@@ -11,7 +11,7 @@ on:
         default: 'MSP_needs_demo'
         type: string
       folder_path:
-        description: 'Folder path containing the content to deploy'
+        description: 'Folder path containing the website to deploy'
         required: true
         default: '_build'
         type: string
@@ -22,14 +22,12 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
@@ -40,19 +38,28 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.inputs.branch }}
+      
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      
       - name: Validate folder path exists
         run: |
           if [ ! -d "${{ github.event.inputs.folder_path }}" ]; then
             echo "Error: The specified folder '${{ github.event.inputs.folder_path }}' does not exist!"
             exit 1
           fi
+          
+      - name: List folder contents (debug)
+        run: |
+          echo "Contents of the specified folder:"
+          ls -la ${{ github.event.inputs.folder_path }}
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload the specified path from the selected branch
+          # Upload the entire specified folder with all files and subdirectories
           path: '${{ github.event.inputs.folder_path }}'
+      
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

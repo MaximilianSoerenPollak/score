@@ -1,0 +1,59 @@
+name: Manual GitHub Pages Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to deploy from'
+        required: true
+        default: 'MSP_needs_demo'
+        type: string
+      folder_path:
+        description: 'Folder path containing the documentation to deploy'
+        required: true
+        default: '_build'
+        type: string
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch }}
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Validate folder path exists
+        run: |
+          if [ ! -d "${{ github.event.inputs.folder_path }}" ]; then
+            echo "Error: The specified folder '${{ github.event.inputs.folder_path }}' does not exist!"
+            exit 1
+          fi
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ github.event.inputs.folder_path }}
+  
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

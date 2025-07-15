@@ -12,14 +12,12 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Requirements management
-------------------------
+Configuration
+#############
 
-Purpose
-+++++++
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   :titlesonly:
 
-Objectives and scope
-++++++++++++++++++++
-
-Approach
-++++++++
+   */index

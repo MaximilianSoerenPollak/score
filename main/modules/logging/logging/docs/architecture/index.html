@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Component Architecture &#8212; S-CORE 0.1 documentation</title>
+    <title>Component Architecture &#8212; S-CORE  documentation</title>
   
   
   
@@ -32,17 +32,17 @@
 
     <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
-    <link rel="stylesheet" type="text/css" href="../../../../../_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/css/score.css?v=6e51530f" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/css/score_needs.css?v=e97392eb" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/css/score_design.css?v=d9fd870c" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
-    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -53,7 +53,7 @@
 
     <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
     <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../../../../../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../../../../../_static/documentation_options.js?v=7f41d439"></script>
     <script src="../../../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../../../_static/design-tabs.js?v=f930bc37"></script>
@@ -66,13 +66,13 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://MaximilianSoerenPollak.github.io/score/versions.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             false;
         </script>
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
-    <link rel="next" title="OS Module" href="../../../../os/index.html" />
+    <link rel="next" title="Orchestrator" href="../../../../orchestrator/index.html" />
     <link rel="prev" title="logging" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -153,15 +153,8 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../../introduction/index.html">
-    Introduction
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../../requirements/index.html">
-    Requirements
+  <a class="nav-link nav-internal" href="../../../../../handbook/index.html">
+    Handbook
   </a>
 </li>
 
@@ -169,6 +162,13 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../../features/index.html">
     Features
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../../requirements/index.html">
+    Requirements
   </a>
 </li>
 
@@ -218,6 +218,20 @@
 <li class=" ">
   <a class="nav-link dropdown-item nav-external" href="https://projects.eclipse.org/projects/automotive.score">
     Eclipse
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../../design_decisions/index.html">
+    Decision Records
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../../introduction/index.html">
+    Eclipse S-CORE (Eclipse Safe Open Vehicle Core)
   </a>
 </li>
 
@@ -334,15 +348,8 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../../introduction/index.html">
-    Introduction
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../../requirements/index.html">
-    Requirements
+  <a class="nav-link nav-internal" href="../../../../../handbook/index.html">
+    Handbook
   </a>
 </li>
 
@@ -350,6 +357,13 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../../features/index.html">
     Features
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../../requirements/index.html">
+    Requirements
   </a>
 </li>
 
@@ -392,6 +406,20 @@
 <li class="nav-item ">
   <a class="nav-link nav-external" href="https://projects.eclipse.org/projects/automotive.score">
     Eclipse
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../../design_decisions/index.html">
+    Decision Records
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../../introduction/index.html">
+    Eclipse S-CORE (Eclipse Safe Open Vehicle Core)
   </a>
 </li>
 
@@ -461,7 +489,8 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../../baselibs/index.html">Baselibs Module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../communication/index.html">Communication Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../feo/index.html">feo Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../feo/index.html">FEO Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../lifecycle/index.html">Lifecycle</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../../index.html">Logging Module</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../../docs/index.html">Module Documents</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">logging</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -470,6 +499,7 @@
 </details></li>
 </ul>
 </details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../orchestrator/index.html">Orchestrator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../os/index.html">OS Module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../tracing/index.html">Tracing Module</a></li>
 </ul>
@@ -540,7 +570,7 @@
                   
   <section id="component-architecture">
 <h1>Component Architecture<a class="headerlink" href="#component-architecture" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-1ea63c0a">
+<div class="need_container docutils container" id="SNCB-af30236f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__logging__logging">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -559,11 +589,7 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">persistency</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
-</span></span></div>
+<div class="line"><span><span></span></span></div>
 <div class="line"><span><div class="line">implements: <span class="implements"><span><a class="reference internal" href="#logic_arc_int__logging__logging" title="comp_arc_sta__logging__logging">logic_arc_int__logging__logging</a></span></span></div>
 <div class="line">included by: <span class="includes"><span><a class="reference internal" href="../../../docs/index.html#mod_view_sta__logging__logging" title="comp_arc_sta__logging__logging">mod_view_sta__logging__logging</a></span></span></div>
 </span></div>
@@ -572,7 +598,7 @@
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-modules/logging/logging/docs/architecture/index-0">
-<object data="../../../../../_images/plantuml-37884659950e5f56143fcbfc893e2dbbe010ec47.svg" type="image/svg+xml" style="width:140px;height:192px;background:#FFFFFF;"></object></p>
+<object data="../../../../../_images/plantuml-13bf5082080bb8e570f073a8482e32947fd2817f.svg" type="image/svg+xml" style="width:140px;height:192px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -580,7 +606,7 @@
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Static View</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Package Diagram</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -589,7 +615,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-25704439">
+<div class="need_container docutils container" id="SNCB-2cd335bf">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int table" id="logic_arc_int__logging__logging">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -608,13 +634,9 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">persistency</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
-</span></span></div>
+<div class="line"><span><span></span></span></div>
 <div class="line"><span><div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_sta__logging__logging" title="logic_arc_int__logging__logging">comp_arc_sta__logging__logging</a></span></span></div>
-<div class="line">used by: <span class="uses"><span><a class="reference internal" href="../../../../communication/configuration/docs/architecture/index.html#comp_arc_sta__com__configuration" title="logic_arc_int__logging__logging">comp_arc_sta__com__configuration</a>, <a class="reference internal" href="../../../../communication/frontent/docs/architecture/index.html#comp_arc_sta__com__frontend" title="logic_arc_int__logging__logging">comp_arc_sta__com__frontend</a>, <a class="reference internal" href="../../../../communication/ipc_binding/docs/architecture/index.html#comp_arc_sta__com__ipc_binding" title="logic_arc_int__logging__logging">comp_arc_sta__com__ipc_binding</a>, <a class="reference internal" href="../../../../communication/mock_binding/docs/architecture/index.html#comp_arc_sta__com__mock_binding" title="logic_arc_int__logging__logging">comp_arc_sta__com__mock_binding</a></span></span></div>
+<div class="line">used by: <span class="uses"><span><a class="reference internal" href="../../../../lifecycle/index.html#comp__lifecycle_launch_manager" title="logic_arc_int__logging__logging">comp__lifecycle_launch_manager</a>, <a class="reference internal" href="../../../../orchestrator/executor/docs/architecture/index.html#comp__orch_executor" title="logic_arc_int__logging__logging">comp__orch_executor</a>, <a class="reference internal" href="../../../../orchestrator/executor/docs/architecture/index.html#comp_arc_sta__orch__executor" title="logic_arc_int__logging__logging">comp_arc_sta__orch__executor</a>, <a class="reference internal" href="../../../../orchestrator/orchestrator/docs/architecture/index.html#comp__orchestrator" title="logic_arc_int__logging__logging">comp__orchestrator</a>, <a class="reference internal" href="../../../../orchestrator/orchestrator/docs/architecture/index.html#comp_arc_sta__orch__orchestrator" title="logic_arc_int__logging__logging">comp_arc_sta__orch__orchestrator</a>, <a class="reference internal" href="../../../../communication/mock_binding/docs/architecture/index.html#comp__com_mock_binding" title="logic_arc_int__logging__logging">comp__com_mock_binding</a>, <a class="reference internal" href="../../../../communication/configuration/docs/architecture/index.html#comp__com_configuration" title="logic_arc_int__logging__logging">comp__com_configuration</a>, <a class="reference internal" href="../../../../communication/frontent/docs/architecture/index.html#comp__com_frontend" title="logic_arc_int__logging__logging">comp__com_frontend</a>, <a class="reference internal" href="../../../../communication/frontent/docs/architecture/index.html#comp_arc_sta__com__frontend" title="logic_arc_int__logging__logging">comp_arc_sta__com__frontend</a>, <a class="reference internal" href="../../../../communication/ipc_binding/docs/architecture/index.html#comp__com_ipc_binding" title="logic_arc_int__logging__logging">comp__com_ipc_binding</a></span></span></div>
 <div class="line">includes: <span class="included_by"><span><a class="reference internal" href="#logic_arc_int_op__logging__isenabled" title="logic_arc_int__logging__logging">logic_arc_int_op__logging__isenabled</a></span></span></div>
 </span></div>
 </div>
@@ -630,7 +652,7 @@
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Architecture Interfaces</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Interface &amp; Feature Interface View</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -639,7 +661,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-92e7501d">
+<div class="need_container docutils container" id="SNCB-5c565f15">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__logging__isenabled">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -658,11 +680,7 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">persistency</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">QM</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
-</span></span></div>
+<div class="line"><span><span></span></span></div>
 <div class="line"><span><div class="line">included by: <span class="included_by"><span><a class="reference internal" href="#logic_arc_int__logging__logging" title="logic_arc_int_op__logging__isenabled">logic_arc_int__logging__logging</a></span></span></div>
 </span></div>
 </div>
@@ -676,7 +694,7 @@
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Architecture Interface Operation</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Interface Operation</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -707,11 +725,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="../../../../os/index.html"
+       href="../../../../orchestrator/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">OS Module</p>
+        <p class="prev-next-title">Orchestrator</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -730,7 +748,7 @@
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/MaximilianSoerenPollak/score/edit/main/docs/modules/logging/logging/docs/architecture/index.rst">
+    <a href="https://github.com/MaximilianSoerenPollak/score/edit/main/'docs'/modules/logging/logging/docs/architecture/index.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -741,15 +759,6 @@
     </a>
   </div>
 </div>
-
-  <div class="sidebar-secondary-item">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../../../../../_sources/modules/logging/logging/docs/architecture/index.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div></div>
 
 </div></div>
               

@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/modern.css?v=803738c0" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css?v=2e2696d1" />
   
@@ -75,7 +75,7 @@
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="Requirements" href="../../../../requirements/index.html" />
-    <link rel="prev" title="Time" href="../../index.html" />
+    <link rel="prev" title="Feature Architecture" href="../architecture/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
@@ -180,15 +180,15 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../modules/index.html">
-    Modules
+  <a class="nav-link nav-internal" href="../../../../architecture/index.html">
+    Platform Architecture
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../contribute/index.html">
-    Contribute
+  <a class="nav-link nav-internal" href="../../../../modules/index.html">
+    Modules
   </a>
 </li>
 
@@ -200,6 +200,13 @@
                 </button>
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../contribute/index.html">
+    Contribute
+  </a>
+</li>
+
+
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../../../quality/qms_report.html">
     Quality
@@ -396,6 +403,13 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../architecture/index.html">
+    Platform Architecture
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../modules/index.html">
     Modules
   </a>
@@ -544,17 +558,18 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../ai_platform/index.html">AI Platform</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../analysis-infra/index.html">Analysis Infrastructure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../baselibs/index.html">Base Libraries (v0.5 beta)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../baselibs/index.html">Base Libraries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../code_generation/index.html">Code Generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../communication/index.html">Communication (v0.5 beta)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../communication/index.html">Communication</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../configuration/index.html">Configuration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../diagnostics/index.html">Diagnostic and Fault Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../frameworks/index.html">Frameworks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../lifecycle/index.html">Lifecycle</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../orchestration/index.html">Orchestration (v0.5 beta)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../persistency/index.html">Persistency (v0.5 beta)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../orchestration/index.html">Orchestration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../persistency/index.html">Persistency</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../security_crypto/index.html">Security &amp; Cryptography</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Time</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html">Feature Architecture</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Requirements</a></li>
 </ul>
 </details></li>
@@ -625,7 +640,7 @@
 <h1>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h1>
 <section id="time-synchronization">
 <h2>Time Synchronization<a class="headerlink" href="#time-synchronization" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-670869bf">
+<div class="need_container docutils container" id="SNCB-0d81f80e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__time__vehicle_time_sync">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -649,6 +664,7 @@
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../../requirements/stakeholder/index.html#stkh_req__time__vehicle_time_sync" title="feat_req__time__vehicle_time_sync">stkh_req__time__vehicle_time_sync</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfied_by"><span><a class="reference internal" href="../architecture/index.html#feat__time" title="feat_req__time__vehicle_time_sync">feat__time</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -670,7 +686,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-da90c237">
+<div class="need_container docutils container" id="SNCB-176a0512">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__time__vehicle_time_sync_prec">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -694,6 +710,7 @@
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../../requirements/stakeholder/index.html#stkh_req__time__vehicle_time_sync" title="feat_req__time__vehicle_time_sync_prec">stkh_req__time__vehicle_time_sync</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfied_by"><span><a class="reference internal" href="../architecture/index.html#feat__time" title="feat_req__time__vehicle_time_sync_prec">feat__time</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -727,7 +744,7 @@ precision, based on the system setup.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-360ff18d">
+<div class="need_container docutils container" id="SNCB-41c0c9e1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__time__vehicle_time_time_api">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -751,6 +768,7 @@ precision, based on the system setup.</p>
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../../requirements/stakeholder/index.html#stkh_req__time__vehicle_time_api" title="feat_req__time__vehicle_time_time_api">stkh_req__time__vehicle_time_api</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfied_by"><span><a class="reference internal" href="../architecture/index.html#feat__time" title="feat_req__time__vehicle_time_time_api">feat__time</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -772,7 +790,7 @@ precision, based on the system setup.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-fa810989">
+<div class="need_container docutils container" id="SNCB-5cf95777">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__time__vehicle_time_acc_qual_api">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -796,6 +814,7 @@ precision, based on the system setup.</p>
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../../requirements/stakeholder/index.html#stkh_req__time__vehicle_time_api" title="feat_req__time__vehicle_time_acc_qual_api">stkh_req__time__vehicle_time_api</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfied_by"><span><a class="reference internal" href="../architecture/index.html#feat__time" title="feat_req__time__vehicle_time_acc_qual_api">feat__time</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -824,7 +843,7 @@ precision, based on the system setup.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-b0f303f0">
+<div class="need_container docutils container" id="SNCB-fab10c78">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__time__vehicle_time_time_pt_qual">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -848,6 +867,7 @@ precision, based on the system setup.</p>
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../../requirements/stakeholder/index.html#stkh_req__time__vehicle_time_api" title="feat_req__time__vehicle_time_time_pt_qual">stkh_req__time__vehicle_time_api</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfied_by"><span><a class="reference internal" href="../architecture/index.html#feat__time" title="feat_req__time__vehicle_time_time_pt_qual">feat__time</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -871,7 +891,7 @@ precision, based on the system setup.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-1afea85b">
+<div class="need_container docutils container" id="SNCB-b12fc03f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__time__vehicle_time_ctrl_flow">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -895,6 +915,7 @@ precision, based on the system setup.</p>
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../../requirements/stakeholder/index.html#stkh_req__time__vehicle_time_api" title="feat_req__time__vehicle_time_ctrl_flow">stkh_req__time__vehicle_time_api</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfied_by"><span><a class="reference internal" href="../architecture/index.html#feat__time" title="feat_req__time__vehicle_time_ctrl_flow">feat__time</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -925,7 +946,7 @@ avoiding, if possible, kernel calls, resource manager involvement and so on.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-57d516ea">
+<div class="need_container docutils container" id="SNCB-87ea9ad8">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__time__vehicle_time_sync_log">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -949,6 +970,7 @@ avoiding, if possible, kernel calls, resource manager involvement and so on.</p>
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../../requirements/stakeholder/index.html#stkh_req__dev_experience__debugging" title="feat_req__time__vehicle_time_sync_log">stkh_req__dev_experience__debugging</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfied_by"><span><a class="reference internal" href="../architecture/index.html#feat__time" title="feat_req__time__vehicle_time_sync_log">feat__time</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -976,7 +998,7 @@ to be able to debug and diagnose the synchronization process.</p>
 </section>
 <section id="time-synchronization-to-absolute-external-sources">
 <h2>Time Synchronization to absolute external sources<a class="headerlink" href="#time-synchronization-to-absolute-external-sources" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-579c9fb7">
+<div class="need_container docutils container" id="SNCB-efc5d309">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__time__abs_sync">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1000,6 +1022,7 @@ to be able to debug and diagnose the synchronization process.</p>
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../../requirements/stakeholder/index.html#stkh_req__time__absolute_time_sync" title="feat_req__time__abs_sync">stkh_req__time__absolute_time_sync</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfied_by"><span><a class="reference internal" href="../architecture/index.html#feat__time" title="feat_req__time__abs_sync">feat__time</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1021,7 +1044,7 @@ to be able to debug and diagnose the synchronization process.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-e414ce96">
+<div class="need_container docutils container" id="SNCB-99e913e1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__time__abs_base_api">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1045,6 +1068,7 @@ to be able to debug and diagnose the synchronization process.</p>
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../../requirements/stakeholder/index.html#stkh_req__time__absolute_time_api" title="feat_req__time__abs_base_api">stkh_req__time__absolute_time_api</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfied_by"><span><a class="reference internal" href="../architecture/index.html#feat__time" title="feat_req__time__abs_base_api">feat__time</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1066,7 +1090,7 @@ to be able to debug and diagnose the synchronization process.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-bbadb10c">
+<div class="need_container docutils container" id="SNCB-8faebedc">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__time__abs_acc_qual">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1090,6 +1114,7 @@ to be able to debug and diagnose the synchronization process.</p>
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../../requirements/stakeholder/index.html#stkh_req__time__absolute_time_api" title="feat_req__time__abs_acc_qual">stkh_req__time__absolute_time_api</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfied_by"><span><a class="reference internal" href="../architecture/index.html#feat__time" title="feat_req__time__abs_acc_qual">feat__time</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1127,7 +1152,7 @@ to be able to debug and diagnose the synchronization process.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-08025821">
+<div class="need_container docutils container" id="SNCB-6e608637">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__time__abs_sec_qual">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1151,6 +1176,7 @@ to be able to debug and diagnose the synchronization process.</p>
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../../requirements/stakeholder/index.html#stkh_req__time__absolute_time_api" title="feat_req__time__abs_sec_qual">stkh_req__time__absolute_time_api</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfied_by"><span><a class="reference internal" href="../architecture/index.html#feat__time" title="feat_req__time__abs_sec_qual">feat__time</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1180,7 +1206,7 @@ to be able to debug and diagnose the synchronization process.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-d564845e">
+<div class="need_container docutils container" id="SNCB-a0095ce6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__time__abs_sync_log">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1204,6 +1230,7 @@ to be able to debug and diagnose the synchronization process.</p>
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../../requirements/stakeholder/index.html#stkh_req__dev_experience__debugging" title="feat_req__time__abs_sync_log">stkh_req__dev_experience__debugging</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfied_by"><span><a class="reference internal" href="../architecture/index.html#feat__time" title="feat_req__time__abs_sync_log">feat__time</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1229,7 +1256,7 @@ to be able to debug and diagnose the synchronization process.</p></td>
 </section>
 <section id="local-clock">
 <h2>Local Clock<a class="headerlink" href="#local-clock" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-28c5e90f">
+<div class="need_container docutils container" id="SNCB-39253105">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__time__high_prec_clock_api">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1253,6 +1280,7 @@ to be able to debug and diagnose the synchronization process.</p></td>
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../../requirements/stakeholder/index.html#stkh_req__time__high_precision_clock_api" title="feat_req__time__high_prec_clock_api">stkh_req__time__high_precision_clock_api</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfied_by"><span><a class="reference internal" href="../architecture/index.html#feat__time" title="feat_req__time__high_prec_clock_api">feat__time</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1277,7 +1305,7 @@ to be able to debug and diagnose the synchronization process.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-6d008803">
+<div class="need_container docutils container" id="SNCB-13f4c85f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__time__monotonic_clock_api">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1301,6 +1329,7 @@ to be able to debug and diagnose the synchronization process.</p></td>
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../../requirements/stakeholder/index.html#stkh_req__time__monotonic_clock_api" title="feat_req__time__monotonic_clock_api">stkh_req__time__monotonic_clock_api</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfied_by"><span><a class="reference internal" href="../architecture/index.html#feat__time" title="feat_req__time__monotonic_clock_api">feat__time</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1325,7 +1354,7 @@ to be able to debug and diagnose the synchronization process.</p></td>
 </section>
 <section id="testability">
 <h2>Testability<a class="headerlink" href="#testability" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-72c8dd68">
+<div class="need_container docutils container" id="SNCB-e8de05b4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__time__mocking_apis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1349,6 +1378,7 @@ to be able to debug and diagnose the synchronization process.</p></td>
 <div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
 <div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../../requirements/stakeholder/index.html#stkh_req__dev_experience__mockup_public_apis" title="feat_req__time__mocking_apis">stkh_req__dev_experience__mockup_public_apis</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfied_by"><span><a class="reference internal" href="../architecture/index.html#feat__time" title="feat_req__time__mocking_apis">feat__time</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1385,12 +1415,12 @@ component and integration testing of applications.</p></td>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../../index.html"
+       href="../architecture/index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Time</p>
+        <p class="prev-next-title">Feature Architecture</p>
       </div>
     </a>
     <a class="right-next"
@@ -1432,7 +1462,7 @@ component and integration testing of applications.</p></td>
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/MaximilianSoerenPollak/score/edit/main/docs/features/time/docs/requirements/index.rst">
+    <a href="https://github.com/MaximilianSoerenPollak/score/edit/main//home/runner/work/score/score/docs/features/time/docs/requirements/index.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
